@@ -16,12 +16,14 @@ export default function Checkout() {
     />
   ));
 
-  console.log(cart.length);
   return (
-    <div className="App">
+    <div>
       <h1>Checkout</h1>
-      {bas}
+      <div className="basketSpace">{bas}</div>
       <h2>Total: £{cart.length * 5.99}</h2>
+      <button className="payButton" onClick={() => alert("Paid")}>
+        Pay
+      </button>
     </div>
   );
 }

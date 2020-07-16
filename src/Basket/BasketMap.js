@@ -8,8 +8,8 @@ export default function BasketMap(props) {
   const { removeFromCart } = useContext(Context);
 
   return (
-    <div className="App">
-      <img alt="some value" className="imageSize" src={props.url} />
+    <div className="BasketBox">
+      <img alt="some value" className="imageBasket" src={props.url} />
       <h1>£5.99</h1>
       <FontAwesomeIcon
         onClick={() => removeFromCart(props.id)}
