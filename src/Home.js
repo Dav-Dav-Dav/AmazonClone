@@ -17,8 +17,9 @@ export default function Home() {
       url={x.url}
       item={x}
       price={x.Price}
+      product={x.ProductTitle}
     />
   ));
 
-  return <div className="ImageLayout">{photoMap}</div>;
+  return <div className="ProductDisplay">{photoMap}</div>;
 }

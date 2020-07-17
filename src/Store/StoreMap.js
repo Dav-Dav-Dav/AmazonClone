@@ -26,11 +26,18 @@ export default function StoreMap(props) {
 
   return (
     <div className="productCard">
-      {AddOrRemove()}
-      <div>
-        <img alt="some value" className="imageSize" src={props.url} />
-        <h2>£{props.price}</h2>
+      <div className="imageTitlePrice">
+        <div className="imageSize">
+          <img alt="some value" className="imageSize" src={props.url} />
+        </div>
+        <div className="HomeProduct">
+          <p>{props.product}</p>
+        </div>
+        <div className="HomePrice">
+          <p>£{props.price}</p>
+        </div>
       </div>
+      {AddOrRemove()}
     </div>
   );
 }
