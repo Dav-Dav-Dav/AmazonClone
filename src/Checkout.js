@@ -14,6 +14,7 @@ export default function Checkout() {
       url={x.url}
       item={x}
       price={x.Price}
+      product={x.ProductTitle}
     />
   ));
 

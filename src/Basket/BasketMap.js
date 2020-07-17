@@ -11,6 +11,7 @@ export default function BasketMap(props) {
     <div className="BasketBox">
       <img alt="some value" className="imageBasket" src={props.url} />
       <h1>£{props.price}</h1>
+      <h1>{props.product}</h1>
       <FontAwesomeIcon
         onClick={() => removeFromCart(props.id)}
         className="bin"
