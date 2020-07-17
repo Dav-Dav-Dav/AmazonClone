@@ -16,6 +16,7 @@ export default function Home() {
       isFavorite={x.isFavorite}
       url={x.url}
       item={x}
+      price={x.Price}
     />
   ));
 

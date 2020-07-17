@@ -10,7 +10,7 @@ export default function BasketMap(props) {
   return (
     <div className="BasketBox">
       <img alt="some value" className="imageBasket" src={props.url} />
-      <h1>£5.99</h1>
+      <h1>£{props.price}</h1>
       <FontAwesomeIcon
         onClick={() => removeFromCart(props.id)}
         className="bin"
