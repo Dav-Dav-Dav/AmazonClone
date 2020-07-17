@@ -66,3 +66,33 @@
     gap: 15px 10px;
   }
 }
+
+/*Checkout*/
+.BasketBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.basketSpace {
+  display: grid;
+  gap: 20px;
+}
+
+.imageBasket {
+  height: 150px;
+  width: 150px;
+}
+
+.payButton {
+  background-color: green;
+  height: 100px;
+  width: 100px;
+  font-size: 1.25em;
+}
+
+.bin {
+  color: navy;
+  font-size: 40px;
+}

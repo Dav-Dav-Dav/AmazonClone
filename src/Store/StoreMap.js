@@ -5,8 +5,6 @@ import { Context } from "../Context";
 export default function StoreMap(props) {
   const { addToCart, removeFromCart, cart } = useContext(Context);
 
-  console.log(cart.some(x => x.id === props.id));
-
   function AddOrRemove(x) {
     if (cart.some(x => x.id === props.id)) {
       return (
