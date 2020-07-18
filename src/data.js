@@ -6,7 +6,7 @@ export default [
     isFavorite: false,
     ProductTitle: "Bed",
     Brand: "Blah",
-    Price: 6.0,
+    Price: 6.56,
     Description: "Blah",
     Category: "Blah"
   },
@@ -28,7 +28,7 @@ export default [
     isFavorite: false,
     ProductTitle: "Sand",
     Brand: "Blah",
-    Price: 5.0,
+    Price: 5.89,
     Description: "Blah",
     Category: "Blah"
   },
@@ -103,7 +103,7 @@ export default [
       "https://github.com/bobziroll/scrimba-react-bootcamp-images/blob/master/pic10.jpg?raw=true",
     id: "10",
     isFavorite: false,
-    ProductTitle: "Blah",
+    ProductTitle: "Sand",
     Brand: "Blah",
     Price: 5.78,
     Description: "Ball",
@@ -114,9 +114,9 @@ export default [
       "https://github.com/bobziroll/scrimba-react-bootcamp-images/blob/master/pic11.jpg?raw=true",
     id: "11",
     isFavorite: false,
-    ProductTitle: "Blah",
+    ProductTitle: "Keyboard",
     Brand: "Blah",
-    Price: 7.0,
+    Price: 7.87,
     Description: "Painting",
     Category: "Blah"
   },
@@ -138,7 +138,7 @@ export default [
     isFavorite: false,
     ProductTitle: "Knife",
     Brand: "Blah",
-    Price: 9.5,
+    Price: 9.54,
     Description: "Blah",
     Category: "Blah"
   },
@@ -149,7 +149,7 @@ export default [
     isFavorite: false,
     ProductTitle: "Fork",
     Brand: "Blah",
-    Price: 3.4,
+    Price: 3.47,
     Description: "Blah",
     Category: "Blah"
   },
@@ -160,7 +160,7 @@ export default [
     isFavorite: false,
     ProductTitle: "Table",
     Brand: "Blah",
-    Price: 8.5,
+    Price: 8.59,
     Description: "Blah",
     Category: "Blah"
   },
@@ -171,7 +171,7 @@ export default [
     isFavorite: false,
     ProductTitle: "Door",
     Brand: "Blah",
-    Price: 9.5,
+    Price: 9.57,
     Description: "Blah",
     Category: "Blah"
   },
@@ -193,7 +193,7 @@ export default [
     isFavorite: false,
     ProductTitle: "Sink",
     Brand: "Blah",
-    Price: 9.5,
+    Price: 9.57,
     Description: "Blah",
     Category: "Blah"
   },
@@ -204,7 +204,7 @@ export default [
     isFavorite: false,
     ProductTitle: "Tap",
     Brand: "Blah",
-    Price: 8.6,
+    Price: 8.68,
     Description: "Blah",
     Category: "Blah"
   },
@@ -215,7 +215,7 @@ export default [
     isFavorite: false,
     ProductTitle: "Wire",
     Brand: "Blah",
-    Price: 9.5,
+    Price: 9.52,
     Description: "Blah",
     Category: "Blah"
   },
@@ -226,7 +226,7 @@ export default [
     isFavorite: false,
     ProductTitle: "Rope",
     Brand: "Blah",
-    Price: 8.6,
+    Price: 8.62,
     Description: "Blah",
     Category: "Blah"
   },
@@ -237,7 +237,7 @@ export default [
     isFavorite: false,
     ProductTitle: "Card",
     Brand: "Blah",
-    Price: 9.5,
+    Price: 9.52,
     Description: "Blah",
     Category: "Blah"
   },
@@ -248,7 +248,7 @@ export default [
     isFavorite: false,
     ProductTitle: "Carpet",
     Brand: "Blah",
-    Price: 8.6,
+    Price: 8.64,
     Description: "Blah",
     Category: "Blah"
   }
