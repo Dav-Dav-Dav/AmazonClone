@@ -1,18 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import data from "./data";
 
 const Context = React.createContext();
 
 function ContextProvider({ children }) {
-  const [photos, setPhotos] = useState([]);
+  const [photos] = useState(data);
   const [cart, setCart] = useState([]);
-
-  const url =
-    "https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json";
-  useEffect(() => {
-    fetch(url)
-      .then(res => res.json())
-      .then(data => setPhotos(data));
-  }, []);
 
   function addToCart(x) {
     setCart(cart.concat(x));

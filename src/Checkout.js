@@ -13,14 +13,18 @@ export default function Checkout() {
       isFavorite={x.isFavorite}
       url={x.url}
       item={x}
+      price={x.Price}
+      product={x.ProductTitle}
     />
   ));
+
+  let totalPrice = cart.map(x => x.Price).reduce((x, a) => x + a, 0);
 
   return (
     <div>
       <h1>Checkout</h1>
       <div className="basketSpace">{bas}</div>
-      <h2>Total: £{cart.length * 5.99}</h2>
+      <h2>Total: £{totalPrice}</h2>
       <button className="payButton" onClick={() => alert("Paid")}>
         Pay
       </button>
