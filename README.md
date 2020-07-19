@@ -4,7 +4,8 @@
 
 **Home page**
 
-- [Add + Remove products](./documenting/AddRemove.md)
+- [Add + Remove products from basket](./documenting/AddRemove.md)
+- [Route to product specific page](./documenting/ProductPage.md)
 
 **Checkout page**
 
