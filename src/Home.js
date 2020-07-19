@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { Context } from "./Context";
 import "./styles.css";
 import StoreMap from "./Store/StoreMap";
-
 //This page displays the various images for sales
 
 export default function Home() {
