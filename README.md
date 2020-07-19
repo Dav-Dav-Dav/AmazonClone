@@ -1,11 +1,12 @@
 # Basic Eccomerce website
 
-##Table of features
+## Table of features
 
 **Home page**
-Testing
-Testing
+
+- [Add + Remove products](./documenting/AddRemove.md)
 
 **Checkout page**
-Testing
-Testing
+
+- Remove products
+- View total
