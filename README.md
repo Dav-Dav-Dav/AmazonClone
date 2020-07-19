@@ -8,5 +8,5 @@
 
 **Checkout page**
 
-- Remove products
-- View total
+- [Basket total](./documenting/BasketTotal.md)
+- [Remove products](./documenting/RemoveProducts.md)
