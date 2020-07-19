@@ -5,7 +5,7 @@ export default [
     id: "1",
     isFavorite: false,
     ProductTitle: "Bed",
-    Brand: "Blah",
+    Brand: "Blhah",
     Price: 6.56,
     Description: "Blah",
     Category: "Blah"
