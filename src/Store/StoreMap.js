@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../Context";
+import { Link } from "react-router-dom";
 //Mapping over the various images for the store
 
 export default function StoreMap(props) {
@@ -31,7 +32,9 @@ export default function StoreMap(props) {
           <img alt="some value" className="imageSize" src={props.url} />
         </div>
         <div className="HomeProduct">
-          <p>{props.product}</p>
+          <Link to={`/${props.id}`}>
+            <p>{props.product}</p>
+          </Link>
         </div>
         <div className="HomePrice">
           <p>£{props.price}</p>
