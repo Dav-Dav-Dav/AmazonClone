@@ -3,15 +3,35 @@ import { Context } from "../Context";
 import { useParams } from "react-router-dom";
 
 export default function ProductPage() {
-  const { photos } = useContext(Context);
+  const { photos, addToCart, removeFromCart, cart } = useContext(Context);
 
   const { productId } = useParams();
 
   //Filter the photos database according the product ID
   const ProductById = photos.filter(x => x.id === productId);
+  console.log(ProductById);
+  function AddOrRemove(x) {
+    if (cart.some(x => x.id === productId)) {
+      return (
+        <button
+          className="removeButton"
+          onClick={() => removeFromCart(productId)}
+        >
+          Remove
+        </button>
+      );
+    } else {
+      return (
+        <button className="addButton" onClick={() => addToCart(ProductById)}>
+          Add to Basket
+        </button>
+      );
+    }
+  }
 
   return (
     <div>
+      {AddOrRemove()}
       <h1>{ProductById.map(x => x.ProductTitle).join("")}</h1>
       <img
         alt="some value"
