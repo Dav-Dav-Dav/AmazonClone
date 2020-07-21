@@ -90,15 +90,14 @@
 
 /*Checkout*/
 .BasketBox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 150px);
 }
 
 .basketSpace {
   display: grid;
-  gap: 20px;
+  gap: 30px;
 }
 
 .imageBasket {
@@ -116,4 +115,10 @@
 .bin {
   color: navy;
   font-size: 40px;
+}
+
+.basketDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
