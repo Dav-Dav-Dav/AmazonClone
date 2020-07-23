@@ -16,10 +16,21 @@ function ContextProvider({ children }) {
     setCart(cart.filter(a => a.id !== x));
   }
 
-  function saveOrder(x) {
-    setHistory(history.concat([[new Date(), x]]));
+  function saveOrder(x, totalPrice) {
+    console.log(totalPrice);
+    let a = new Map([
+      ["date", new Date()],
+      ["orderNumber", 5],
+      ["totalPrice", totalPrice]
+    ]);
+    const obj = Object.fromEntries(a);
+    setHistory(history.concat([[obj, x]]));
     setCart([]);
   }
+
+  console.log(history);
+
+  //console.log( history )
 
   return (
     <Context.Provider
