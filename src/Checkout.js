@@ -4,7 +4,7 @@ import "./styles.css";
 import BasketMap from "./Basket/BasketMap";
 
 export default function Checkout() {
-  const { cart } = useContext(Context);
+  const { cart, saveOrder } = useContext(Context);
 
   const bas = cart.map(x => (
     <BasketMap
@@ -25,7 +25,7 @@ export default function Checkout() {
       <h1>Checkout</h1>
       <div className="basketSpace">{bas}</div>
       <h2>Total: £{totalPrice}</h2>
-      <button className="payButton" onClick={() => alert("Paid")}>
+      <button className="payButton" onClick={() => saveOrder(cart)}>
         Pay
       </button>
     </div>
