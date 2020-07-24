@@ -122,3 +122,8 @@
   align-items: center;
   justify-content: center;
 }
+
+/*Product Page*/
+.lastOrderedProductBanner {
+  background: yellow;
+}

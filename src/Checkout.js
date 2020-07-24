@@ -25,7 +25,7 @@ export default function Checkout() {
       <h1>Checkout</h1>
       <div className="basketSpace">{bas}</div>
       <h2>Total: £{totalPrice}</h2>
-      <button className="payButton" onClick={() => saveOrder(cart)}>
+      <button className="payButton" onClick={() => saveOrder(cart, totalPrice)}>
         Pay
       </button>
     </div>
