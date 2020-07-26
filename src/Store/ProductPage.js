@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../Context";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 export default function ProductPage() {
   const { photos, addToCart, removeFromCart, cart, history } = useContext(
@@ -61,7 +61,9 @@ export default function ProductPage() {
       let productName = ProductById.map(x => x.ProductTitle).join("");
       return (
         <h1 className="lastOrderedProductBanner">
-          {productName} last ordered {day} {dayOfTheMonth} {month} {year}
+          <Link to={`/orders/${productId}`}>
+            {productName} last ordered {day} {dayOfTheMonth} {month} {year}
+          </Link>
         </h1>
       );
     }

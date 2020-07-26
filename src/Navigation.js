@@ -12,6 +12,7 @@ export default function Navigation() {
           Pic Some
         </Link>
       </h2>
+      <Link to="/orders">Orders</Link>
       <Link to="/checkout">
         <FontAwesomeIcon className="basket" icon={faCoffee} />
       </Link>
