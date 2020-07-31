@@ -133,3 +133,70 @@
 .productInfoBoxText {
   grid-area: 1 / 2 / 1 / 2;
 }
+
+/*Page Name: OrdersPageMapProducts*/
+.orderPage {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 7fr 1fr;
+  grid-template-rows: 200px;
+}
+
+.orderPageText {
+  grid-area: 1 / 3 / 1 / 3;
+  background: pink;
+}
+
+.imageSizeOrder {
+  grid-area: 1 / 2 / 1 / 2;
+  background: blue;
+  width: 100%;
+  height: 100%;
+}
+
+.orderPageTextPosition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Orders Page*/
+.ordersSummaryBox {
+  margin-top: 30px;
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-columns: 1fr 9fr 1fr;
+}
+
+.ordersSummaryBoxText {
+  background: pink;
+  grid-area: 1 / 2 / 1 / 2;
+}
+
+.ordersSummaryBoxTextThreeBoxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px;
+}
+
+.ordersSummaryBoxTextThreeBoxesOne {
+  grid-area: 1 / 1 / 1 / 1;
+}
+
+.ordersSummaryBoxTextThreeBoxesTwo {
+  grid-area: 1 / 2 / 1 / 2;
+}
+
+.ordersSummaryBoxTextThreeBoxesThree {
+  grid-area: 1 / 3 / 1 / 3;
+}
+
+.ordersSummaryBoxTextThreeBoxesText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
