@@ -71,37 +71,34 @@ export default function ProductPage() {
 
   function AddOrRemove(x) {
     if (cart.some(x => x.id === productId)) {
-      return (
-        <button
-          className="removeButton"
-          onClick={() => removeFromCart(productId)}
-        >
-          Remove
-        </button>
-      );
+      return <button onClick={() => removeFromCart(productId)}>Remove</button>;
     } else {
       return (
-        <button className="addButton" onClick={() => addToCart(ProductById)}>
-          Add to Basket
-        </button>
+        <button onClick={() => addToCart(ProductById)}>Add to Basket</button>
       );
     }
   }
 
   return (
     <div>
-      {AddOrRemove()}
       {lastOrdered()}
-      <h1>{ProductById.map(x => x.ProductTitle).join("")}</h1>
-      <img
-        alt="some value"
-        className="imageSize"
-        src={ProductById.map(x => x.url).join("")}
-      />
-      <h2>Price</h2>
-      <p>{ProductById.map(x => x.Price).join("")}</p>
-      <h2>Description</h2>
-      <p>{ProductById.map(x => x.Description).join("")}</p>
+
+      <div className="productInfoBox">
+        <img
+          alt="some value"
+          className="imageSize"
+          src={ProductById.map(x => x.url).join("")}
+        />
+
+        <div className="productInfoBoxText">
+          <h1>{ProductById.map(x => x.ProductTitle).join("")}</h1>
+          <h2>Price</h2>
+          <p>{ProductById.map(x => x.Price).join("")}</p>
+          <h2>Description</h2>
+          <p>{ProductById.map(x => x.Description).join("")}</p>
+          {AddOrRemove()}
+        </div>
+      </div>
     </div>
   );
 }
