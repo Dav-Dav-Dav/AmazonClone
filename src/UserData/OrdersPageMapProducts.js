@@ -10,7 +10,7 @@ export default function OrderPageMapProduct(props) {
       <img alt="some value" className="imageSizeOrder" src={props.all.url} />
       <div className="orderPageText">
         <div className="orderPageTextPosition">
-          <Link to={`/orders/${props.all.id}`}>
+          <Link to={`/${props.all.id}`}>
             <h1>{props.all.ProductTitle}</h1>
           </Link>
           <h1>Price {props.all.Price}</h1>

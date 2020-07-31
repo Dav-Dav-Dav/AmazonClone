@@ -15,15 +15,6 @@ export default function OrdersPage(props) {
     x => x[0].orderNumber === parseInt(orderNum)
   );
 
-  //console.log(OrderSpecificData[0][1]);
-  console.log(
-    OrderSpecificData[0][0].date
-      .toString()
-      .split(" ")
-      .slice(0, 3)
-      .join(" ")
-  );
-
   const productsOrdered = OrderSpecificData[0][1].map(x => (
     <OrdersPageMapProducts key={x.id} all={x} />
   ));
