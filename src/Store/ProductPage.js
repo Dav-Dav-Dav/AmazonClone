@@ -12,9 +12,10 @@ export default function ProductPage() {
   //Filter the photos database according the product ID
   const ProductById = photos.filter(x => x.id === productId);
 
-  function lastOrdered(x) {
+  function lastOrdered() {
     if (history.filter(x => x[1].some(x => x.id === productId)).length > 0) {
-      let a = history.filter(x => x[1].some(x => parseInt(x.id) === 1));
+      let a = history.filter(x => x[1].some(x => x.id === productId));
+
       let b = Object.values(a[a.length - 1][0])[0]
         .toString()
         .split(" ");
@@ -61,7 +62,7 @@ export default function ProductPage() {
       let productName = ProductById.map(x => x.ProductTitle).join("");
       return (
         <h1 className="lastOrderedProductBanner">
-          <Link to={`/orders/${productId}`}>
+          <Link to={`/orders/${a.reverse()[0][0].orderNumber}`}>
             {productName} last ordered {day} {dayOfTheMonth} {month} {year}
           </Link>
         </h1>
@@ -82,7 +83,6 @@ export default function ProductPage() {
   return (
     <div>
       {lastOrdered()}
-
       <div className="productInfoBox">
         <img
           alt="some value"
