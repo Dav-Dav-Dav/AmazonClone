@@ -1,14 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import data from "./data";
+import db from "./firebase";
 
 const Context = React.createContext();
 
 function ContextProvider({ children }) {
   const [photos] = useState(data);
-
   const [cart, setCart] = useState([]);
   const [history, setHistory] = useState([]);
   const [orderNumber, setOrderNumer] = useState([1]);
+  const [videos, setVideos] = useState([]);
+
+  useEffect(() => {
+    db.collection("videos").onSnapshot((snapshot) =>
+      setVideos(snapshot.docs.map((doc) => doc.data()))
+    );
+  }, []);
+
+  console.log(videos)
 
   function addToCart(x) {
     setCart(cart.concat(x));
