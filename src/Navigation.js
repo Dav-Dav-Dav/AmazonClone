@@ -13,6 +13,7 @@ export default function Navigation() {
         </Link>
       </h2>
       <Link to="/orders">Orders</Link>
+      <Link to="/login">Login</Link>
       <Link to="/checkout">
         <FontAwesomeIcon className="basket" icon={faCoffee} />
       </Link>
