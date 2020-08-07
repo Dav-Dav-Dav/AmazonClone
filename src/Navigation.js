@@ -12,6 +12,7 @@ export default function Navigation() {
           Pic Some
         </Link>
       </h2>
+      <Link to="/shopping">Shopping</Link>
       <Link to="/orders">Orders</Link>
       <Link to="/login">Login</Link>
       <Link to="/checkout">

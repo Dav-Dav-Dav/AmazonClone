@@ -4,11 +4,11 @@ import "./styles.css";
 import StoreMap from "./Store/StoreMap";
 //This page displays the various images for sales
 
-export default function Home() {
+export default function Shopping() {
   const { photos } = useContext(Context);
 
   // Mapping over the data
-  const photoMap = photos.map(x => (
+  const photoMap = photos.map((x) => (
     <StoreMap
       key={x.id}
       id={x.id}
