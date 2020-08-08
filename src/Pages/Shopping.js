@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../Context";
 import "../styles.css";
-import StoreMap from "../Store/StoreMap";
+import ShoppingMap from "../Components/Shopping/ShoppingMap";
 //This page displays the various images for sales
 
 export default function Shopping() {
@@ -9,7 +9,7 @@ export default function Shopping() {
 
   // Mapping over the data
   const photoMap = photos.map((x) => (
-    <StoreMap
+    <ShoppingMap
       key={x.id}
       id={x.id}
       isFavorite={x.isFavorite}
