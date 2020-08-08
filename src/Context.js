@@ -9,22 +9,13 @@ function ContextProvider({ children }) {
   const [cart, setCart] = useState([]);
   const [history, setHistory] = useState([]);
   const [orderNumber, setOrderNumer] = useState([1]);
-  const [videos, setVideos] = useState([]);
-
-  useEffect(() => {
-    db.collection("videos").onSnapshot((snapshot) =>
-      setVideos(snapshot.docs.map((doc) => doc.data()))
-    );
-  }, []);
-
-  console.log(videos)
 
   function addToCart(x) {
     setCart(cart.concat(x));
   }
 
   function removeFromCart(x) {
-    setCart(cart.filter(a => a.id !== x));
+    setCart(cart.filter((a) => a.id !== x));
   }
 
   function saveOrder(x, totalPrice) {
