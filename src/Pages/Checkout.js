@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import { Context } from "../Context";
 import "../styles.css";
-import BasketMap from "../Basket/BasketMap";
+import CheckoutMap from "../Components/Checkout/CheckoutMap";
 
 export default function Checkout() {
   const { cart, saveOrder } = useContext(Context);
 
   const bas = cart.map((x) => (
-    <BasketMap
+    <CheckoutMap
       key={x.id}
       id={x.id}
       isFavorite={x.isFavorite}

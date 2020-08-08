@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
-import { Context } from "../Context";
+import { Context } from "../../Context";
 import { Link } from "react-router-dom";
-//Mapping over the various images for the store
 
-export default function StoreMap(props) {
+//Mapping over the various images for the store
+export default function ShoppingMap(props) {
   const { addToCart, removeFromCart, cart } = useContext(Context);
 
   function AddOrRemove(x) {
-    if (cart.some(x => x.id === props.id)) {
+    if (cart.some((x) => x.id === props.id)) {
       return (
         <button
           className="removeButton"

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { Context } from "../Context";
+import { Context } from "../../Context";
 import { Link } from "react-router-dom";
-import "../styles.css";
+import "../../styles.css";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
