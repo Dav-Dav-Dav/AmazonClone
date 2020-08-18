@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import greyPot from '../Images/greyPlantPot.jpg';
 
 const TwoBoxes = styled.div`
     display: grid;
@@ -17,6 +18,11 @@ const TwoBoxes = styled.div`
     grid-area: 1 / 2 / 1 / 2;
     background: green;
   }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 
@@ -27,6 +33,7 @@ export default function Homepage() {
           <p>Homepage</p>
         </div>
         <div className="left"> 
+          <img src={ greyPot } />
         </div> 
     </TwoBoxes>
   );
