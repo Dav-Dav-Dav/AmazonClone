@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../../Context";
 import { Link } from "react-router-dom";
+import "../../styles.css";
 
 //Mapping over the various images for the store
 export default function ShoppingMap(props) {
