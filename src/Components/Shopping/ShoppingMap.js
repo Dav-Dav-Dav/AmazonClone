@@ -29,7 +29,7 @@ export default function ShoppingMap(props) {
   return (
     <div className="productCard">
       <div className="imageTitlePrice">
-        <div className="imageSize">
+        <div>
           <img alt="some value" className="imageSize" src={props.url} />
         </div>
         <div className="HomeProduct">
